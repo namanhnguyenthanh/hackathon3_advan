@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-image: url(https://media.istockphoto.com/id/1160720443/vector/abstract-simple-geometric-vector-seamless-pattern-with-gold-line-texture-on-white-background.jpg?s=612x612&w=0&k=20&c=_kgBISj1Wio4LTRdBFN3IttmunACCl1-T5VKdurvb68=);
+    background-position: center center;
+}
+
+.add-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.add-section span{
+    display: block;
+    background-color:rgba(0, 0, 0, 0.309);
+    padding: 30px 50px;
+    font-size: 30px;
+    color: black;
+    border-radius: 4px;
+}
+.main{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 50px;
+    flex-wrap: wrap;
+
+}
+.main .bookmark-item{
+    background-color: rgba(0, 0, 0, 0.309);
+    padding: 30px 50px;
+    font-size: 20px;
+    color: white;
+    border-radius: 4px;
+    margin-top: 20px;
+    position: relative;
+    margin-top: 30px;
+}
+
+.main .bookmark-item .deleteBtn{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 18px;
+}
+.modal-add{
+    width: 400px;
+    background-color: rgba(151, 151, 151, 0.877);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: none;
+}
+
+.modal-add .modal-title{
+    position: relative;
+    background-color: black;
+    color: white;
+    padding: 10px 5px;
+}
+
+.modal-add .modal-title .closeBtn{  
+    position: absolute;
+    top: 10px;
+    right: 10px
+}
+
+.modal-add form{
+    padding-top:10px ;
+}
+
+.modal-add form .input-group {
+   display: flex;
+   flex-direction: column;
+   margin-bottom: 20px;
+   padding: 0 10px;
+}
+
+.modal-add form .input-group label{
+    padding-bottom: 5px;
+    color: black;
+}
+.modal-add form .input-group input{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.modal-add form button{
+    padding:5px 10px;
+    border-radius: 5px;
+    ;
+}
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        border: 1px solid gray;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" data-color="red"></div>
+      <div class="box" data-color="green"></div>
+      <div class="box" data-color="yellow"></div>
+    </div>
+    <script>
+      const boxAll = document.querySelectorAll(".box");
+      const container = document.querySelector(".container");
+      for (let i = 0; i < boxAll.length; i++) {
+        const boxElement = boxAll[i]
+        boxElement.addEventListener('mouseenter',function(e){
+            const elementClick = e.target
+            const color = elementClick.getAttribute('data-color')
+            container.style.background = color
+        })
+      }
+    </script>
+  </body>
+</html>

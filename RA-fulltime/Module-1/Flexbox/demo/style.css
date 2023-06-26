@@ -1,0 +1,32 @@
+.flex-parent{
+    /* width: 600px; */
+    height: 600px;
+    background-color: pink;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    /* căn chỉnh các phần tử theo chiều flex-direction */
+   align-items: center;
+   /*  căn chỉnh các phần tử con theo chiều VUÔNG GÓC flex-direction */
+}
+.child-1{
+    width: 100px;
+    height: 100px;
+    background-color:red;
+}
+.child-2{
+    width: 100px;
+    height: 100px;
+    background-color:green;
+}
+.child-3{
+    width: 100px;
+    height: 100px;
+    background-color:blue;
+}
+.child-4{
+    width: 100px;
+    height: 100px;
+    background-color:yellow;
+}

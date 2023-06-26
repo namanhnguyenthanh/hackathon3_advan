@@ -1,0 +1,5 @@
++ node_modules => là phẩn cài đặt từ package.json
++ package.json => là nơi lưu trữ cài đặt từ các thư viện
++ gitignore => giúp cho việc đẩy code lên github sẽ không đẩy node_modules
++ public => là những phần hiện thị ra ngoài mà hình cho người dùng
++src => Phần logic viết

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="text">
+      <p>This is a text. This is a text. This is a text</p>
+    </div>
+    <button class="hide-btn">Hide text</button>
+    <button class="show-btn">Show text</button>
+
+    <script>
+      const textElement = document.querySelector(".text");
+      const hideBtn = document.querySelector(".hide-btn");
+      const showBtn = document.querySelector(".show-btn");
+      hideBtn.addEventListener("click", function () {
+        textElement.style.display = "none";
+      });
+      showBtn.addEventListener("click", function () {
+        textElement.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

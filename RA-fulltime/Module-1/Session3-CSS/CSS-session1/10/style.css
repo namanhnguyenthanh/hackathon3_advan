@@ -1,0 +1,14 @@
+*{
+   background-color:aliceblue ;
+   
+}
+#container{
+    margin:0auto;
+    padding: 0;
+    border: 10px solid white;
+}
+img{
+    width: 250px;
+    height: 300px;
+
+}

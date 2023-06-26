@@ -1,0 +1,35 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+div.student-form div.student-list{
+    width: 500px;
+    border: 1px solid #fff;
+    margin: 25px;
+    padding: 10px;
+    float: left;
+}
+div.student-list table{
+    width: 700px;
+}
+ h1{
+    padding: 0px;
+    margin-top: 0px;
+}
+div.student-form label{
+    width: 150px;
+    float: left;
+}
+div.student-form input[type="text"], button{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 5px;
+}
+button{
+    margin-top: 15px;
+}
+.updateBtn , .deleteBtn{
+    width: 50px;
+    margin: 5px;
+}
+ 

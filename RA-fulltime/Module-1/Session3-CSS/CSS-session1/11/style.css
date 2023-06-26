@@ -1,0 +1,7 @@
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 10px solid rgb(30, 17, 17);
+    align-items: center;
+}

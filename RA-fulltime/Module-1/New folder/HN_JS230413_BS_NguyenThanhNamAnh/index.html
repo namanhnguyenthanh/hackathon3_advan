@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="student-form">
+      <h1>Thông tin học viên</h1>
+      <br />
+      <label>Họ và tên</label>
+      <input type="text" class="fullname" />
+      <br />
+      <label>Email</label>
+      <input type="text" class="email" /><br />
+      <label>Số điện thoại</label>
+      <input type="text" class="phone" /><br />
+      <label>Quê quán</label>
+      <input type="text" class="address" /><br />
+      <label>Giới tính</label>
+      <input type="radio" name="gender" value="nam" class="male" />Nam
+      <input type="radio" name="gender" value="nu" class="female" />Nữ
+      <br />
+      <label>&nbsp;</label>
+      <button class="btn">Lưu lại</button>
+    </div>
+    <div class="student-list">
+      <h1>Danh sách học viên</h1>
+      <table width="600px" border="1" cellpadding="0" cellpadding="0">
+        <tr>
+          <td>#</td>
+          <td>Họ và Tên</td>
+          <td>Email</td>
+          <td>Diện thoại</td>
+          <td>Quê Quán</td>
+          <td>Giới tinh</td>
+          <td>Hành động</td>
+          <td><button class="sortBtn">Sắp xếp thứ tự</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .modal-box-container {
+        background-color: rgba(213, 213, 213, 0.444);
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+      }
+      .hide {
+        display: none;
+      }
+
+      .modal-box {
+        position: absolute;
+        width: 400px;
+        padding: 20px;
+        border: 1px solid black;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: white;
+      }
+      .modal-box b {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        border: 1px solid black;
+        padding: 3px 7px;
+        border-top: 0px;
+        border-right: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h4>Modal Example</h4>
+      <button class="btn">Open Modal</button>
+    </div>
+
+    <div class="modal-box-container hide">
+      <div class="modal-box">
+        <p>some text in the Modal...</p>
+        <b class="close">x</b>
+      </div>
+    </div>
+    <script>
+        const btnClick = document.querySelector('.btn')
+        
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="thaythe"></div>
+    <div name="duc" tuoi="30" job="IT" class="goc"></div>
+
+    <script>
+      const divGoc = document.querySelector(".goc");
+      const divThayThe = document.querySelector(".thaythe");
+      const name = divGoc.getAttribute("name");
+      const tuoi = divGoc.getAttribute("tuoi");
+      const job = divGoc.getAttribute("job");
+      console.log(name, tuoi, job);
+      divThayThe.setAttribute("name2", name);
+      divThayThe.setAttribute("tuoi2", tuoi);
+      divThayThe.setAttribute("job2", job);
+    </script>
+  </body>
+</html>

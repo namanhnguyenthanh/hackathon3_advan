@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+</head>
+<body>
+    <script>
+// Hàm tính diện tích hình tròn
+function tinhDienTichHinhTron(banKinh) {
+  let dienTich = Math.PI * banKinh * banKinh;
+  return dienTich;
+}
+
+// Hàm tính chu vi hình tròn
+function tinhChuViHinhTron(banKinh) {
+  let chuVi = 2 * Math.PI * banKinh;
+  return chuVi;
+}
+
+// Gọi hàm tính diện tích và chu vi hình tròn
+let banKinhHinhTron = 10;
+let dienTich = tinhDienTichHinhTron(banKinhHinhTron);
+let chuVi = tinhChuViHinhTron(banKinhHinhTron);
+
+console.log("Diện tích hình tròn: " + dienTich);
+console.log("Chu vi hình tròn: " + chuVi);
+
+
+    </script>
+</body>
+</html>

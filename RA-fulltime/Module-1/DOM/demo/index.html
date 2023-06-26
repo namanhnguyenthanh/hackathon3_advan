@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .Complete {
+        background-color: pink;
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="list">
+      <li>Hello World</li>
+      <li>Hello World 1</li>
+      <li>Hello World 2</li>
+      <li>Hello World 3 <button id="btn">Complete</button></li>
+    </ul>
+    <input type="text" id="input" />
+    <button id="btn-2">Click Me!</button>
+    <script>
+      let list = document.getElementById("list");
+      console.log(list.children[2].parentElement);
+      let btn = document.getElementById("btn");
+      console.log(btn);
+      btn.onclick = function () {
+        let li = btn.parentElement;
+        // li.style.textDecoration = "line-through";
+        //////////////////////////////////////////
+        // if (!li.style.textDecoration) {
+        //   li.style.textDecoration = "line-through";
+        //   li.style.backgroundColor = "pink"
+        //   li.style.fontSize = "20px"
+
+        // } else {
+        //   li.style.textDecoration = "";
+        //   li.style.backgroundColor = ""
+        //   li.style.fontSize = ""
+        // }
+        //////////////////////////////////////////
+        // if (!li.classList.contains("Complete")) {
+        //   li.classList.add("Complete");
+        // } else {
+        //   li.classList.remove("Complete");
+        // }
+        /////////////////////////////////////////
+        li.classList.toggle("Complete");
+      };
+
+      let li = document.createElement("li");
+      li.innerHTML = "HEHEHEHE";
+      list.appendChild(li);
+      // li.remove();
+
+      //
+
+      let input = document.getElementById("input");
+      let clickBtn = document.getElementById("btn-2");
+      console.log(input, clickBtn);
+      clickBtn.onclick = function () {
+        console.log(input.value);
+      };
+
+  
+    </script>
+  </body>
+</html>
+//với function{}-> luôn tạo scope mới
+//với {}ì- else-loop-for-while-do-while thì chỉ có let, const tạo ra scope
+// muốn xác định giá trị của biền tại thời điểm run time bạn sẽ làm 2 bước. b1: câu lệnh lấy giá trị biến đang ở scope nào.b2:nếu nó tìm trong scopr của nó không có khai báo biến đó thì nó sẽ move up lên trên để xem có khai báo biến đó không?.b3: nếu đi chuyenr đến ông tổ cửa nó là hlobal mà vẫn không thấy khai báo biến thì biến lỗi

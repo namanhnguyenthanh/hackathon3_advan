@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .img_to img {
+        width: 420px;
+        height: auto;
+        margin-bottom: 20px;
+      }
+      .img_nho {
+        display: flex;
+      }
+      .img_nho img {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+      }
+      .img_nho img:hover {
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="img_to">
+      <img
+        src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/340622465_920881665910195_6550404231183526631_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y6tgbMDqc9MAX9-QvWW&_nc_ht=scontent.fhan4-1.fna&oh=00_AfC35_Mr-LLEbX6mkB95KXS6Qthr1YiPN5zL2fPCMiD7hw&oe=64709AA7"
+        alt=""
+      />
+    </div>
+    <div class="img_nho">
+      <div>
+        <img
+          src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/340622465_920881665910195_6550404231183526631_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=Y6tgbMDqc9MAX9-QvWW&_nc_ht=scontent.fhan4-1.fna&oh=00_AfC35_Mr-LLEbX6mkB95KXS6Qthr1YiPN5zL2fPCMiD7hw&oe=64709AA7"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/338383048_231582479349714_762501595183856769_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=lMwQEqX9rCUAX8wO8QI&_nc_ht=scontent.fhan3-4.fna&oh=00_AfCvDYanWg2-ky1_2SQTAoP9U-V9oycfaM7J0Jhwcc9tJw&oe=64719995"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://scontent.fhan4-1.fna.fbcdn.net/v/t39.30808-6/331624297_707086931059802_8024332215247436917_n.jpg?stp=cp6_dst-jpg&_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=bx0IA_oMp7EAX9JAGh5&_nc_ht=scontent.fhan4-1.fna&oh=00_AfDK8T7BBhQLPQgDwcVyvP85__UCI2SN0IrE7l6oaTp1Qg&oe=64710B69"
+          alt=""
+        />
+      </div>
+      <div>
+        <img
+          src="https://scontent.fhan3-4.fna.fbcdn.net/v/t39.30808-6/328443882_1263137497575333_6619946657737133192_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=bb9pSK23Dy4AX-VVhId&_nc_ht=scontent.fhan3-4.fna&oh=00_AfBL5bwjakTiMUiVGQJGuKGr14ZAUjhIJ3nqK2ZHQpjYhA&oe=6471B03B"
+          alt=""
+        />
+      </div>
+    </div>
+    <script>
+      const imgSelector = document.querySelectorAll(".img_nho img");
+      const imgTo = document.querySelector(".img_to img");
+      for (let i = 0; i < imgSelector.length; i++) {
+        const imgElementClick = imgSelector[i];
+        //thêm sự kiện
+        imgElementClick.addEventListener("click", function (event) {
+          // console.log(event.target)
+          const clicked = event.target;
+          const srcClick = clicked.getAttribute("src");
+
+          imgTo.setAttribute("src", srcClick);
+        });
+      }
+    </script>
+  </body>
+</html>

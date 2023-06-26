@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container div{
+    width: 200px;
+    height: 200px;
+}
+.container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container.box1{
+    background-color: red;
+    transform: scale(3);
+}
+.container.box2{
+    background-color: blue;
+}
+.container.box3{
+    background-color: green;
+}
+.box{
+    background-color: rgb(3, 247, 255);
+    width: 200px;
+    height: 200px;
+    margin: 0auto;
+    transition: width 2s linear;
+}
+.box:hover{
+    background-color: pink;
+    width: 60%;
+    cursor: pointer;
+}
+.box:active{
+    width: 100%;
+    background-color: red;
+}
+p :active{
+    background-color: blueviolet;
+    font-size: 40px;
+}

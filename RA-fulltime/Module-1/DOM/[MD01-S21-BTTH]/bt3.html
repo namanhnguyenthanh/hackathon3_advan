@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .squares {
+        border: 1px solid;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+      .vuong {
+        display: flex;
+      }
+      .do {
+        background-color: red;
+      }
+      .xanh {
+        background-color: blue;
+      }
+      .vang {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="full">
+        <h1>Change background color</h1>
+        <p>Mouse over the squares!</p>
+        <div class="vuong">
+          <div class="squares do"></div>
+          <div class="squares xanh"></div>
+          <div class="squares vang"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const red = document.querySelector(".do");
+      const green = document.querySelector(".xanh");
+      const yellow = document.querySelector(".vang");
+      const container = document.querySelector(".full");
+      red.addEventListener("mouseover", function () {
+        container.classList.toggle("do");
+      });
+      green.addEventListener("mouseover", function () {
+        container.classList.toggle("xanh");
+      });
+      yellow.addEventListener("mouseover", function () {
+        container.classList.toggle("vang");
+      });
+    </script>
+  </body>
+</html>
